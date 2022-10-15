@@ -1,10 +1,10 @@
-package com.H2o.campagnerejetsnondomestique;
+package com.H2o;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CampagneRejetsNonDomestiqueApplicationTests {
+class H2oApplicationTests {
 
     @Test
     void contextLoads() {
