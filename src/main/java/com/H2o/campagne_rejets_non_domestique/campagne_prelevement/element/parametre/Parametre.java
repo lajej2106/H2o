@@ -1,4 +1,4 @@
-package com.H2o.campagnerejetsnondomestique.parametre;
+package com.H2o.campagne_rejets_non_domestique.campagne_prelevement.element.parametre;
 
 import com.H2o.enumeration.Unite;
 import lombok.Getter;
@@ -22,9 +22,9 @@ public class Parametre {
             strategy = GenerationType.SEQUENCE,
             generator = "parametre_sequence"
     )
+    private Long id;
 
-    Long id;
-    String nom;
-    Enum<Unite> unite;
-    String description;
+    private String nom;
+    private Enum<Unite> unite;
+    private String description;
 }
