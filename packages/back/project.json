@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "back",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/back/src",
   "projectType": "application",
   "targets": {
@@ -9,21 +9,15 @@
       "options": {
         "root": "packages/back"
       },
-      "dependsOn": [
-        "^install"
-      ],
-      "outputs": [
-        "packages/back/build"
-      ]
+      "dependsOn": ["^install"],
+      "outputs": ["packages/back/build"]
     },
     "install": {
       "executor": "@nxrocks/nx-spring-boot:install",
       "options": {
         "root": "packages/back"
       },
-      "outputs": [
-        "packages/back/build"
-      ]
+      "outputs": ["packages/back/build"]
     },
     "test": {
       "executor": "@nxrocks/nx-spring-boot:test",
